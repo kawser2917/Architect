@@ -122,6 +122,61 @@ main {
     font-weight: 700;
 }
 
+/* Feature section */
+.feature {
+    margin-top: 100px;
+    display: flex;
+    gap: 140px;
+}
+
+.feature img {
+    height: 90%;
+    margin-left: 90px;
+}
+
+.feature-content .section-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.feature-card {
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.card-title {
+    color: #131313;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.experience-card {
+    border-radius: 8px;
+    background: #FF900E;
+    width: 342px;
+    padding: 40px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+
+.experience-title {
+    color: #FFF;
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.experience-text {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
 /* Facts section started */
 .facts-card-container {
     display: flex;
@@ -143,12 +198,40 @@ main {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 .card-title {
     color: #727272;
     font-weight: 600;
     margin-top: 10px;
 }
 
+/* Sponsors section */
+.sponsors {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.sponsors-image-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sponsors-image-container img {
+    width: 166px;
+    height: 50px;
+}
+
+/* footer section */
+footer {
+    max-width: 1440px;
+    margin: 70px auto;
+    background: #FFF4E7;
+    text-align: center;
+    padding: 40px;
+ 
+}
 
 /* Small Device  */
 @media screen and (max-width:576px) {
@@ -157,8 +240,19 @@ main {
     }
 
     nav,
-    .facts-card-container{
+    .feature,
+    .facts-card-container,
+    .sponsors-image-container {
         flex-direction: column;
+    }
+
+    .feature img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .experience-card {
+        max-width: 250px;
     }
 
     .team-container {
@@ -173,7 +267,9 @@ main {
     .facts-card-container {
         padding: 10px;
     }
-    .facts-card-container{
+
+    .facts-card-container,
+    .sponsors-image-container {
         gap: 20px;
     }
 }
@@ -184,7 +280,9 @@ main {
         padding: 30px;
     }
 
-    nav {
+    nav,
+    .feature,
+    .sponsors-image-container {
         flex-direction: column;
     }
 
